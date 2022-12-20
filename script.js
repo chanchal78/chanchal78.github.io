@@ -16,8 +16,8 @@ arrowIcons = document.querySelectorAll(".wrapper i");
 let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
 
 const showHideIcons = () => {
-    // showing and hiding prev/next icon according to carousel scroll left value
-    let scrollWidth = chapter.scrollWidth - chapter.clientWidth; // getting max scrollable width
+    
+    let scrollWidth = chapter.scrollWidth - chapter.clientWidth; 
     arrowIcons[0].style.display = chapter.scrollLeft == 0 ? "none" : "block";
     arrowIcons[1].style.display = chapter.scrollLeft == scrollWidth ? "none" : "block";
 }
